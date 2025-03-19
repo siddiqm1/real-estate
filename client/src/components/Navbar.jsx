@@ -4,8 +4,8 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center px-4 py-6">
-      <div className="flex items-center grow-5 gap-10">
+    <nav className="flex justify-between items-center h-[100px]">
+      <div className="flex items-center flex-[3] gap-10">
         <a
           href=""
           className="flex items-center gap-1.5  transition-all hover:scale-[1.05]"
@@ -30,8 +30,8 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      <div className="grow-1 gap-10 items-center flex justify-between lg:bg-transparent">
-        <div className="hidden md:flex items-center gap-10">
+      <div className="flex-[2] h-[100%] items-center flex justify-end md:bg-transparent lg:bg-[#fcf5fd]">
+        <div className="hidden md:flex items-center gap-10 px-3">
           <a href="" className="transition-all hover:scale-[1.05]">
             Sign in
           </a>
@@ -49,7 +49,7 @@ const Navbar = () => {
           <img src="/menu.png" alt="menu" />
         </div>
         <div
-          className={`absolute bg-slate-900 text-white h-screen w-[50%] top-0 transition-all ease-in-out duration-800 flex flex-col justify-center items-center gap-10 ${
+          className={`absolute bg-slate-900 text-white h-screen w-[50%] top-0 transition-all ease-in-out duration-800 flex flex-col justify-center items-center md:hidden gap-10 ${
             open ? "right-0" : "right-[-50%]"
           }`}
         >
