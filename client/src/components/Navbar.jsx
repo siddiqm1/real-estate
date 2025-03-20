@@ -12,7 +12,7 @@ const Navbar = () => {
         >
           <img src="/logo.png" alt="logo" className="w-9" />
           <span className="text-xl font-bold md:hidden lg:inline">
-            Sidiqstate
+            Homestate
           </span>
         </a>
         <div className="gap-10 items-center hidden md:flex">
