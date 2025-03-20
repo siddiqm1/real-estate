@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div className="flex h-[100%]">
       <div className="flex-[3]">
-        <div className="h-full flex flex-col justify-center gap-10 pr-20">
+        <div className="h-full flex flex-col justify-center gap-12 pr-20">
           <h1 className="lg:text-3xl xl:text-5xl font-semibold">Find Real Estate & Get Your Dream Place</h1>
           <p className="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
@@ -16,7 +16,7 @@ const HomePage = () => {
 
             <SearchBar />
           
-          <div className="flex gap-15">
+          <div className="flex gap-30">
             <div className="flex flex-col items-center">
                 <h1 className="lg:text-2xl font-semibold">16+</h1>
                 <h3 className="capitalize text-slate-500">years of experience</h3>
