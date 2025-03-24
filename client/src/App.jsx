@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import HomePage from "./routes/HomePage";
+import Register from "./routes/Register";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
           <Navbar />
         </div>
         <div className="h-11/12">
-          <HomePage />
+          <Register />
         </div>
       </div>
     </>
