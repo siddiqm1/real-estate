@@ -16,28 +16,28 @@ const Navbar = () => {
           </span>
         </a>
         <div className="gap-10 items-center hidden md:flex">
-          <a href="" className="transition-all hover:scale-[1.05]">
+          <a href="" className="transition-all hover:scale-[1.05] xl:text-lg">
             Home
           </a>
-          <a href="" className="transition-all hover:scale-[1.05]">
+          <a href="" className="transition-all hover:scale-[1.05] xl:text-lg">
             About
           </a>
-          <a href="" className="transition-all hover:scale-[1.05]">
+          <a href="" className="transition-all hover:scale-[1.05] xl:text-lg">
             Contact
           </a>
-          <a href="" className="transition-all hover:scale-[1.05]">
+          <a href="" className="transition-all hover:scale-[1.05] xl:text-lg">
             Agents
           </a>
         </div>
       </div>
       <div className="flex-[2] h-[100%] items-center flex justify-end md:bg-transparent lg:bg-[#fcf5fd]">
         <div className="hidden md:flex items-center gap-10 px-3">
-          <a href="" className="transition-all hover:scale-[1.05]">
+          <a href="" className="transition-all hover:scale-[1.05] xl:text-lg">
             Sign in
           </a>
           <a
             href=""
-            className="transition-all hover:scale-[1.05] px-4 py-2 bg-yellow-300 rounded-xl"
+            className="transition-all hover:scale-[1.05] xl:text-lg px-4 py-2 bg-yellow-300 rounded-xl"
           >
             Sign up
           </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
         <div
           className={`absolute bg-slate-900 text-white h-screen w-[50%] top-0 transition-all ease-in-out duration-800 flex flex-col justify-center items-center md:hidden gap-10 ${
-            open ? "right-0" : "right-[-50%]"
+            open ? "right-0" : "hidden"
           }`}
         >
           <a href="" className="transition-all hover:scale-[1.05]">

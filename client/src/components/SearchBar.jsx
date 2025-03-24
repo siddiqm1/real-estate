@@ -32,15 +32,20 @@ const SearchBar = () => {
           );
         })}
       </div>
-      <form className="border border-slate-200 flex justify-between items-center h-15 w-full">
-        <input type="text" name="location" placeholder="City location" className="px-4 h-full" />
+      <form className="w-full border border-slate-200 flex flex-col h-fit lg:gap-0 lg:flex lg:flex-row lg:justify-between lg:items-center lg:h-12 xl:h-15">
+        <input
+          type="text"
+          name="location"
+          placeholder="City location"
+          className="w-full h-14 px-3 lg:px-2 xl:px-4 lg:h-full border border-slate-200"
+        />
         <input
           type="number"
           name="minPrice"
           placeholder="Min price"
           min={0}
           max={100000000}
-          className="px-4 h-full"
+          className="w-full h-14 px-3 border border-slate-200 lg:px-2 xl:px-4 lg:h-full"
         />
         <input
           type="number"
@@ -48,10 +53,10 @@ const SearchBar = () => {
           placeholder="Max price"
           min={0}
           max={100000000}
-          className="px-4 h-full"
+          className="w-full h-14 px-3 border border-slate-200 lg:px-2 xl:px-4 lg:h-full"
         />
-        <button className="bg-yellow-300 px-5 h-full">
-          <img src="/search.png" alt="tombol" className="w-5" />
+        <button className="bg-yellow-300 px-5 w-full h-10 lg:w-30 lg:h-full">
+          <img src="/search.png" alt="tombol" className="w-6 lg:w-5 mx-auto" />
         </button>
       </form>
     </div>
