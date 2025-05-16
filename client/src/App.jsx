@@ -1,19 +1,48 @@
+import Layout from "./components/Layout";
 import Navbar from "./components/Navbar";
 import HomePage from "./routes/HomePage";
+import ListPage from "./routes/ListPage";
 import Register from "./routes/Register";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import SinglePage from "./routes/SinglePage";
+import Login from "./routes/Login";
 
 function App() {
+
+  let router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout/>,
+      children: [
+        {
+          path: "/",
+          element: <HomePage />
+        },
+        {
+          path: "/register",
+          element: <Register />
+        },
+        {
+          path: "/login",
+          element: <Login />
+        },
+        {
+          path: "/list",
+          element: <ListPage />
+        },
+        {
+          path: "/:id",
+          element: <SinglePage />
+        },
+      ]
+    }
+  ]);
+  
   return (
-    <>
-      <div className="h-screen w-full 2xl:max-w-[1366px] mx-auto px-6 xl:max-w-6xl lg:max-w-4xl md:max-w-2xl font-poppins">
-        <div className="">
-          <Navbar />
-        </div>
-        <div className="h-11/12">
-          <Register />
-        </div>
-      </div>
-    </>
+    <RouterProvider router={router} />
   );
 }
 
